@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Practice</title>
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Bootstrap CSS link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+      crossorigin="anonymous"
+    />
+    <!-- icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg px-4 bg-dark">
+        <div class="container-fluid navSection">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="currentColor"
+            class="bi bi-laptop"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"
+            />
+          </svg>
+          <a class="navbar-brand text-primary fw-bolder mx-2" href="#"
+            >Swot System</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-primary active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="/contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="/login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Banner section -->
+      <section class="bannerSection">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner h-[200px]">
+            <div class="carousel-item active">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAv7TjV-h8HOwEv0rXnXDAjzW9XxAwiDXmA7kky6F4sA&s=10"
+                class="d-block w-100 carousel-img"
+                alt="web page"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+                <a href="/blog.html">
+                  <button class="btn btn-primary text-dark">
+                    View Details
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8LVzaMO6GOecirPWWxnCefRTfsaDfCYbUaAS4kBavKg&s=10"
+                class="d-block w-100 carousel-img"
+                alt="webpage"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+                <a href="/blog.html">
+                  <button class="btn btn-primary text-dark">
+                    View Details
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item h-50">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EUCPCD0p3F2scjxBbbMWhzXzUc698wpX1BET_UxMFQ&s=10"
+                class="d-block w-100 carousel-img"
+                alt="web"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section>
+        <div style="text-align: center; margin-top: 60px">
+          <h2 style="color: rgb(5, 141, 245); font-weight: bolder">About Us</h2>
+          <p>
+            Welcome to our website! We are a team of passionate professionals
+            dedicated to providing the best services possible.
+          </p>
+        </div>
+        <div class="card my-5 mb-5 mx-5">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTxoJOzDhj-8nkfEfAibh9ZBeMDnUplrTgTBnScLo39A&s=10"
+                class="img-fluid rounded-start"
+                alt="person"
+              />
+            </div>
+            <div class="col-md-8 py-5">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <button class="btn btn-primary my-4">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Top Services section  -->
+      <section>
+        <div style="text-align: center; margin-top: 60px">
+          <h2>Top Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis
+            magni, reprehenderit a tempore quod exercitationem, expedita maiores
+            necessitatibus totam nobis. Sit magni voluptas blanditiis, numquam
+            neque esse ipsam quasi.
+          </p>
+        </div>
+        <div class="d-flex justify-content-center gap-5 my-5 flex-wrap">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZfeb1pntNVXOudkXw2x3OOk2Qb_H7TxmMUVMnOPYuaA&s=10"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web Design</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ-mBKBMcjQb3jBojxyX2G7jUNvbFVs928p5HVjDFEvg&s=10"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Graphics Design</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGdTaMG2w5pdh-prxFYoOVOc5WRxDSgoBz0zPuW1NUA&s=10"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Digital Marketing</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="grid row row-cols-1 row-cols-md-2 g-4 mx-5 my-5 justify-content-center"
+        >
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGdTaMG2w5pdh-prxFYoOVOc5WRxDSgoBz0zPuW1NUA&s=10"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <button class="btn btn-primary">View details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGdTaMG2w5pdh-prxFYoOVOc5WRxDSgoBz0zPuW1NUA&s=10"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <button class="btn btn-primary">View details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGdTaMG2w5pdh-prxFYoOVOc5WRxDSgoBz0zPuW1NUA&s=10"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content.
+                </p>
+                <button class="btn btn-primary">View details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGdTaMG2w5pdh-prxFYoOVOc5WRxDSgoBz0zPuW1NUA&s=10"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <button class="btn btn-primary">View details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accordion section -->
+      <section class="my-5">
+        <div style="text-align: center; margin-top: 60px">
+          <h2>Our Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis
+            magni, reprehenderit a tempore quod exercitationem, expedita maiores
+            necessitatibus totam nobis. Sit magni voluptas blanditiis, numquam
+            neque esse ipsam quasi.
+          </p>
+        </div>
+        <div class="accordion mx-5 my-5" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                How to do an accordion?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Learning to play the accordion involves mastering posture, the
+                bellows (the instrument's "lungs"), the right-hand melody side,
+                and the left-hand bass/chord buttons.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Which is harder, piano or accordion?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Neither instrument is objectively harder; the piano and the
+                accordion simply present different types of challenges.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                How many hours to learn accordion?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Learning to play the accordion takes anywhere from 2 weeks to
+                play a very simple song to 3 to 5 years to achieve
+                intermediate-to-advanced multi-genre proficiency.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container d-flex justify-content-between flex-wrap">
+        <div>
+          <h2>Swot System</h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="126"
+            height="126"
+            fill="currentColor"
+            class="bi bi-laptop"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"
+            />
+          </svg>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <p>Email: info@swotsystem.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                />
+              </svg>
+              <a
+                class="text-white text-decoration-none"
+                href="https://facebook.com"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white text-decoration-none"
+                href="https://twitter.com"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white text-decoration-none"
+                href="https://instagram.com "
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center mb-0 mt-5">
+        &copy; 2023 Swot System. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.min.js"
+      integrity="sha384-89aa4glufciPv46aKltztWQEmk+Tu9W2RhzXr6VcnUUEub7F8+06RcL2RYLCOHUq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
